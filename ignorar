@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Para Cadastro</title>
+</head>
+<body>
+    Formulário Para Cadastro
+
+    
+
+            <form method="POST" action="mailto:login">
+                <p>Nome:
+                    <input type="text" name="NOME" size="31" maxlength="50">
+                </p>
+                <p>E-mail:
+                    <input type="text" name="E-mail" size="30" maxlength="50">
+                </p>
+                <p>Sexo:
+                    <input type="radio" name="Masculino" size="28">Masculino
+                    <input type="radio" name="Feminino" size="50">Feminino
+                </p>
+                <p>RG:
+                    <input type="text" name="RG" size="50" maxlength="50">
+                <p>CPF:
+                    <input type="text" name="CPF" size="50" maxlength="50">
+                <p>Login:
+                    <input type="text" name="login" size="50" maxlength="50">
+                <p>Senha:
+                    <input type="password" name="senha" size="50" maxlength="50">
+                <p>
+                    <input type="submit" name="Enviar" size="8">
+                        
+                
+                    <input type="reset" name="Limpar" size="8"></p>
+    
+            </form>
+</body>
+</html>

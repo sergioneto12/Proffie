@@ -1,0 +1,80 @@
+/* css = cascating stylesheet */
+
+
+/*no root, aplicamos uma paleta de preset, que faz uma entrada de valores para usar como cores no projeto
+após a definição do local da cor (como body, header etc.), usa-se o type para localizar a parte a ser estilizada
+e o var para escolher uma cor da paleta*/
+:root {
+    --color-background: #F0F0F7;
+    --color-primary-lighter: #9871F5;
+    --color-primary-light: #916BEA;
+    --color-primary: #8257E5;
+    --color-primary-dark: #774DD6;
+    --color-primary-darker: #6842c2;
+    --color-secondary: #04D361;
+    --color-secondary-dark: #04BF58;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #D4C2FF;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #6A6180;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    --color-small-info: #C1BCCC;
+    font-size: 60%; /* tamanho inicial = 16px, 1 rem ou 100%, controle das medidas rem */
+}
+
+/*box model: todo e qualquer elemento html com css, é uma caixa*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+
+    background-color: var(--color-background);
+    display: flex; /*posição das tags do body serão uma ao lado da outra*/
+    align-items: center;
+    justify-content: center;
+
+}
+/*Para a intervenção em mais de uma tag na html*/
+body,
+input,
+button,
+textarea {
+    font-weight: 500;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    color: var(--color-text-base);
+}
+
+
+#container {
+    /* box model - caixa, padding = preenchimento
+    border: 1px solid red; borda de preenchimento
+    padding: 10px 40px 100px; preenchimento do espaço
+    margin: ; margem (1 valor, 4 cantos / 2 valores = 1v barras h, 2v barras v, 3 valores = topo, laterais e baixo */
+
+    /*width: 100px;
+    border: 1px solid red;
+    padding-left: 50px;*/
+
+    width: 90vw;
+    max-width: 700px;
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%; /*todo 1rem vai ser relativo a 10px (fonte padrão = 16px, 62,5% = 10px)*/
+    }
+}

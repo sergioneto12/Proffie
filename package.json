@@ -1,0 +1,27 @@
+{
+  "name": "NLW2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "nunjucks": "^3.2.2",
+    "sqlite-async": "^1.1.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergioneto12/Projeto_NLW.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sergioneto12/Projeto_NLW/issues"
+  },
+  "homepage": "https://github.com/sergioneto12/Projeto_NLW#readme",
+  "description": ""
+}
